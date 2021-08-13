@@ -34,7 +34,7 @@ Continue reading for project setup and submission.
 
 ## Submission
 
-This project should be submitted by adding [@znicholasbrown](https://github.com/znicholasbrown) as a collaborator to your cloned repository on GitHub. Once you've done so, please send an email to [nicholas@prefect.io](nicholas@prefect.io) to confirm your submission.
+This project should be submitted by adding [@znicholasbrown](https://github.com/znicholasbrown) and [@zhen0](https://github.com/zhen0) as collaborators to your cloned repository on GitHub. Once you've done so, please send an email to [jenny@prefect.io](jenny@prefect.io) and [nicholas@prefect.io](nicholas@prefect.io) to confirm your submission.
 
 ## Local Development
 
