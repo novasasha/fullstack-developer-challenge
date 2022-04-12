@@ -47,7 +47,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .message-item {
   cursor: pointer;
   display: flex;

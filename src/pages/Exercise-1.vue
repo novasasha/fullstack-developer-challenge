@@ -14,7 +14,7 @@
         <em>Tip:</em> There are many ways to achieve these stories. You should read through the source component to get an understanding of how it works.
       </InfoBox>
 
-      <ul class="exercise-1__user">
+      <ul>
         <strong>A user can...</strong>
         <li>
           see when a message is <strong>urgent</strong> (these messages contain a top-level key (<code>message.urgent</code>) to denote this)
@@ -27,7 +27,7 @@
         </li>
       </ul>
 
-      <ul class="exercise-1__developer">
+      <ul>
         <strong>A developer can...</strong>
         <li>
           choose to override the styling and contents of the title of the component (for example to change the title from "Inbox" to "My Inbox" or to add a user avatar)
@@ -55,10 +55,3 @@
 
   const messagingStore = useMessagingStore()
 </script>
-
-<style lang="scss">
-.exercise-1__user,
-.exercise-1__developer {
-  margin-bottom: 36px;
-}
-</style>

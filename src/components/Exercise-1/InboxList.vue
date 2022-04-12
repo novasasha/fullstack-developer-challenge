@@ -66,7 +66,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .inbox-list {
   background-color: white;
   border-radius: 4px;
