@@ -30,11 +30,13 @@
       </div>
     </div>
 
-    <router-view v-slot="{ Component }">
-      <transition name="fade" mode="out-in">
-        <component :is="Component" />
-      </transition>
-    </router-view>
+    <div class="app__router-view">
+      <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in">
+          <component :is="Component" />
+        </transition>
+      </router-view>
+    </div>
   </div>
 </template>
 
@@ -57,9 +59,11 @@
 .app__navigation {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .app__navigation-item {
+  white-space: nowrap;
   .router-link-active {
     color: #2c3e50;
     text-decoration: none;
@@ -74,8 +78,29 @@
   }
 }
 
+.app__router-view {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 a {
   color: #27b1ff;
   font-weight: bold;
+}
+
+pre {
+  code {
+    color: #333;
+    display: block;
+    font-size: 0.9rem;
+  }
+}
+
+code {
+  background-color: #eee;
+  color: crimson;
+  padding: 2px 4px;
+  border-radius: 4px;
 }
 </style>
