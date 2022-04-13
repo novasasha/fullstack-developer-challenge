@@ -27,7 +27,7 @@
       </InfoBox>
 
       <p>
-        No additional packages or libraries are required to complete this challenge but you may add any that you wish. Please do not modify this instructions component (found at <code>/src/views/Instructions.vue</code>) or any of the instruction text for the exercise (these will be clearly denoted in the code) until your submission has been graded. Any other code (including router, store, styling, and components) are free for you to modify at your discretion.
+        No additional packages or libraries are required to complete this challenge but you may add any that you wish. Please do not modify this instructions component (found at <code>/src/pages/HomeInstructions.vue</code>) or any of the instruction text for the exercise (these will be clearly denoted in the code) until your submission has been graded. Any other code (including router, store, styling, and components) are free for you to modify at your discretion.
       </p>
 
       <InfoBox>

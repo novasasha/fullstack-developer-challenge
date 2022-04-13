@@ -27,7 +27,7 @@
   import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
   import { computed, PropType, reactive } from 'vue'
   import MessageItem from '@/components/Exercise-1/MessageItem.vue'
-  import { Message } from '@/types/Message'
+  import { Message } from '@/types/Exercise-1/Message'
 
   defineProps({
     messages: {

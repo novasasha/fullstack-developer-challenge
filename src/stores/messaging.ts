@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import { Message } from '@/types/Message'
+import { Message } from '@/types/Exercise-1/Message'
 
 type MessagingState = {
   messages: Message[],

@@ -20,7 +20,7 @@
 <script lang="ts" setup>
   import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
   import { computed, PropType } from 'vue'
-  import { Message } from '@/types/Message'
+  import { Message } from '@/types/Exercise-1/Message'
 
   const props = defineProps({
     message: {
