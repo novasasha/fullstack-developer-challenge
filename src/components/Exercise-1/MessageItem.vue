@@ -1,7 +1,7 @@
 <template>
   <div class="message-item" :class="classes.item" @click.prevent="toggleActive">
     <div class="message-item__checkbox">
-      <i class="far fa-lg" :class="classes.icon" />
+      <FontAwesomeIcon class="fa-lg" :icon="['far', classes.icon]" />
     </div>
     <div>
       <div class="message-item__from">
@@ -18,6 +18,7 @@
 </template>
 
 <script lang="ts" setup>
+  import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
   import { computed, PropType } from 'vue'
   import { Message } from '@/types/Message'
 
@@ -39,7 +40,7 @@
     item: {
       'message-item--selected': props.selected,
     },
-    icon: [props.selected ? 'fa-check-square' : 'fa-square'],
+    icon: [props.selected ? 'check-square' : 'square'],
   }))
 
   function toggleActive(): void {

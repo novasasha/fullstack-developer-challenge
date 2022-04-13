@@ -44,7 +44,9 @@
     <!-- Please do not modify the code between these comments! -->
 
     <!-- You may modify any code beneath this line -->
-    <InboxList :messages="messagingStore.messages" />
+    <div class="exercise-1__results">
+      <InboxList :messages="messagingStore.messages" />
+    </div>
   </div>
 </template>
 

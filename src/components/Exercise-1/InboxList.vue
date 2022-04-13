@@ -5,8 +5,8 @@
         {{ selectedMessagesLabel }}
       </div>
       <div class="inbox-list__actions">
-        <i class="fas fa-search fa-lg" />
-        <i class="fas fa-ellipsis-v fa-lg" />
+        <FontAwesomeIcon class="fa-lg" :icon="['fas', 'search']" />
+        <FontAwesomeIcon class="fa-lg" :icon="['fas', 'ellipsis-v']" />
       </div>
     </div>
 
@@ -24,6 +24,7 @@
 
 
 <script lang="ts" setup>
+  import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
   import { computed, PropType, reactive } from 'vue'
   import MessageItem from '@/components/Exercise-1/MessageItem.vue'
   import { Message } from '@/types/Message'
