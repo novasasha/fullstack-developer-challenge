@@ -19,7 +19,7 @@
       </p>
 
       <p>
-        To start, this challenge consists of 3 exercises. Please spend no more than 2 hours total on these; the goal is to get a sense for how you solve problems and implement your code - these questions are not designed to trick you.
+        To start, this challenge consists of 3 exercises. Please spend no more than 3 hours total on these; the goal is to get a sense for how you solve problems and implement your code - these questions are not designed to trick you.
       </p>
 
       <InfoBox>
@@ -40,7 +40,11 @@
         Submission
       </h3>
       <p>
-        This project should be submitted by adding <a href="https://github.com/znicholasbrown" target="_blank">@znicholasbrown</a> as a collaborator to your cloned repository on GitHub. Once you've done so, please send an email to <a href="mailto:nicholas@prefect.io" target="_blank">nicholas@prefect.io</a> to confirm your submission.
+        This project should be submitted by adding <a href="https://github.com/znicholasbrown" target="_blank">@znicholasbrown</a> 
+        and <a href="https://github.com/zhen0" target="_blank">@zhen0</a> 
+        and <a href="https://github.com/pleek91" target="_blank">@pleek91</a> 
+        as collaborators to your cloned repository on GitHub. Once you've done so, 
+        please send an email to <a href="mailto:jenny@prefect.io" target="_blank">jenny@prefect.io</a> to confirm your submission.
       </p>
     </div>
 
