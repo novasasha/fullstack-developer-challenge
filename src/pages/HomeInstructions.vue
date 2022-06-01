@@ -19,7 +19,7 @@
       </p>
 
       <p>
-        To start, this challenge consists of 3 exercises. Please spend no more than 3 hours total on these; the goal is to get a sense for how you solve problems and implement your code - these questions are not designed to trick you.
+        To start, this challenge consists of 3 exercises. The goal is to get a sense for how you solve problems and implement your code - these questions are not designed to trick you.
       </p>
 
       <InfoBox>
