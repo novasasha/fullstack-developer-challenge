@@ -11,7 +11,7 @@
       </p>
 
       <InfoBox>
-        <em>Note:</em> This exercise is more open-ended than the previous exercises. Use this as an opportunity to show off your design chops but don't let this take you longer than the allotted time!
+        <em>Note:</em> This exercise is more open-ended than the previous exercises. Use this as an opportunity to show off your design chops!
       </InfoBox>
 
       <ul class="instruction-list ma-auto my-6">
