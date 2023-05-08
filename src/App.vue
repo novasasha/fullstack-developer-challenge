@@ -3,7 +3,7 @@
     <div class="app__heading">
       <img alt="Prefect logo" class="app__heading-logo" src="@/assets/logo.svg">
       <h2>
-        Front End Software Engineer Challenge
+        Full Stack Developer Challenge
       </h2>
 
       <div class="app__navigation">

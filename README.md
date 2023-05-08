@@ -1,16 +1,25 @@
 <p align="center" >
-   <img src="https://images.ctfassets.net/gm98wzqotmnx/3Ufcb7yYqcXBDlAhJ30gce/c237bb3254190795b30bf734f3cbc1d4/prefect-logo-full-gradient.svg" width="500" style="max-width: 500px;" alt="Prefect Logo">
+ <svg viewBox="0 0 106 165" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 27.5L53 55V110L106 82.5V27.5L53 0L0 27.5Z"
+    fill="#2D6DF6" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 27.5L53 55V110L106 82.5V27.5L53 0L0 27.5Z"
+    fill="url(#paint0_linear_2070_5702)" />
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M53 110L0 82.5V137.5L53 165V110Z" fill="#C7EBFF" />
+  <defs>
+    <linearGradient id="paint0_linear_2070_5702" x1="53" y1="1" x2="53" y2="110"
+      gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1C44D2" />
+      <stop offset="0.369792" stop-color="#2D6DF6" />
+      <stop offset="1" stop-color="#89D5FF" />
+    </linearGradient>
+  </defs>
+</svg>  
 </p>
 
-<p align="center">
-<a href="https://prefect.io">
-    <img src="https://images.ctfassets.net/gm98wzqotmnx/3mwImS57DEydMQXU1FCGG/6e36e2d49faf78cf4a166f123c2c43ca/image__5_.png" height="27" alt="Powered By Prefect">
-    </a>
-</p>
 
-# Prefect Front End Software Engineer Challenge
+# Prefect Fullstack Developer Challenge
 
-Welcome to the Prefect Front End Software Engineer Challenge!
+Welcome to the Prefect Fullstack Developer Challenge!
 
 This challenge consists of 3 exercises. The goal is to get a sense of how you solve problems and implement your code - the  questions are not designed to trick you.
 
@@ -27,7 +36,7 @@ Continue reading for project setup and submission.
 
 ## Submission
 
-This project should be submitted by adding [@znicholasbrown](https://github.com/znicholasbrown), [@pleek91](https://github.com/pleek91), [@zhen0](https://github.com/zhen0) as collaborators to your cloned repository on GitHub. Once you've done so, please send an email to [jenny@prefect.io](jenny@prefect.io) to confirm your submission.
+This project should be submitted by adding [@znicholasbrown](https://github.com/znicholasbrown), [@pleek91](https://github.com/pleek91), [@zhen0](https://github.com/zhen0) as collaborators to your cloned repository on GitHub. Once you've done so, please send an email to [jenny@prefect.io](jenny@prefect.io) to confirm your submission and to submit your python question answers.
 
 ## Recommended IDE
 
@@ -36,10 +45,16 @@ This project should be submitted by adding [@znicholasbrown](https://github.com/
 
 ## Local Development
 
-To start, install the project dependencies.
+To start, make sure you're on the right version of node.
 
 ```
-npm install
+nvm use
+```
+
+Then, install the project dependencies.
+
+```
+npm ci
 ```
 
 
