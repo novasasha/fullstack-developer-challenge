@@ -8,7 +8,7 @@
       </h2>
 
       <p>The following questions should take you no longer than 2 hours to complete; the goal is to get a sense for how you communicate technical concepts and write pre - these questions are not designed to trick you.  Please explain your thought process as much as possible.</p>
-      <p>This exercise is not timed, however, the sooner we receive it back the sooner we can move forward in our interview process. Please add your answers to your submission in whatever format is easiest for you (e.g. a Jupiter notebook). </p>
+      <p>This exercise is not timed, however, the sooner we receive it back the sooner we can move forward in our interview process. Please add your answers to your cloned repo in GitHub in whatever format is easiest for you (e.g. a Jupiter notebook). </p>
       <p> You can see a fully formatted version of the questions at: <a>https://gist.github.com/zhen0/70828dd54ad673b5e29b087d2053a11f</a></p>
 
       <p> 1. Explain the differences between the following two pre snippets - is one preferred over the other?</p>
