@@ -43,6 +43,7 @@
         This project should be submitted by adding <a href="https://github.com/znicholasbrown" target="_blank">@znicholasbrown</a>
         and <a href="https://github.com/zhen0" target="_blank">@zhen0</a>
         and <a href="https://github.com/pleek91" target="_blank">@pleek91</a>
+        and <a href="https://github.com/abrookins" target="_blank">@abrookins</a>
         as collaborators to your cloned repository on GitHub. Once you've done so,
         please send an email to <a href="mailto:jenny@prefect.io" target="_blank">jenny@prefect.io</a> to confirm your submission.
       </p>
