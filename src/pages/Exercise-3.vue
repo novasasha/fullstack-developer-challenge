@@ -54,9 +54,7 @@
     <!-- Please do not modify the code between these comments! -->
 
     <!-- You may modify any code beneath this line -->
-    <div class="exercise-3__results">
-      <SOExample />
-    </div>
+    <SOExample />
   </div>
 </template>
 
@@ -64,10 +62,3 @@
   import SOExample from '@/components/Exercise-3/SOExample.vue'
   import InfoBox from '@/components/InfoBox.vue'
 </script>
-
-<style lang="scss">
-.exercise-3__results { @apply
-  bg-background
-  rounded-lg
-}
-</style>

@@ -80,12 +80,7 @@
   })
 </script>
 
-<style lang="scss">
-.so-example { @apply
-  px-6
-  py-3
-}
-
+<style>
 .so-example__title { @apply
   flex
   items-center
@@ -111,10 +106,11 @@
   flex
   flex-col
   gap-4
-  p-2
+  px-4
+  py-2
   max-w-xs
-  bg-slate-500
-  text-white
+  bg-slate-50
+  text-slate-950
   rounded-lg
 }
 
@@ -165,8 +161,8 @@
 
 .so-example__tag { @apply
   text-xs
-  text-sky-500
-  bg-slate-50
+  text-sky-700
+  bg-sky-100
   rounded
   px-2
   py-1

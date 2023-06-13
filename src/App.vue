@@ -5,7 +5,7 @@
         <p-icon alt="Prefect logo" class="app__heading-logo" icon="PrefectLight" />
 
         <p-heading heading="1">
-          Full Stack Developer Challenge
+          Full-Stack Developer Challenge
         </p-heading>
 
         <p-theme-toggle />

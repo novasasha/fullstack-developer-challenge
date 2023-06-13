@@ -85,32 +85,13 @@
         However, if you plan to make this repository public, <strong>please do not do so until after your submission has been graded</strong> (we'll let you know when that is!). In addition, please remove or replace Prefect in the <p-code inline>
           &lt;title&gt;
         </p-code> block of the root html file (found in  <p-code inline>
-          /public/index.html
-        </p-code>) as well as the <p-code inline>
-          &lt;link&gt;
-        </p-code> and <p-code inline>
-          &lt;meta&gt;
-        </p-code> blocks between the comments in that same file as well as all associated logos. Last, please remove or replace the Prefect logo in the root application file (found in <p-code inline>
-          /src/App.vue
-        </p-code>) and the associated <p-code inline>
-          .svg
-        </p-code> found in the assets folder.
+          /index.html
+        </p-code>) and any associated logos.
       </p>
-      <p>
-        If you haven't modified the <p-code inline>
-          index.html
-        </p-code> file as part of your challenge, you can run the following command from the root of the project directory to automatically remove / replace all of the above:
-      </p>
-
-      <p-terminal class="mx-auto" :command="command" />
     </p-content>
   </p-content>
 </template>
 
 <script lang="ts" setup>
   import InfoBox from '@/components/InfoBox.vue'
-
-  const command = 'mv public/index-template.html public/index.html && \
-    rm public/{*.png,*.xml,*.ico,*.svg,*.webmanifest} && \
-    mv src/assets/vue-logo.svg src/assets/logo.svg'
 </script>
