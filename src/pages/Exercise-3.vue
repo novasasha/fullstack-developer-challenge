@@ -1,61 +1,60 @@
 <template>
   <!-- You may modify any code above this line -->
-  <div class="exercise-3">
+  <p-content class="exercise-3">
     <!-- Please do not modify the code between these comments! -->
-    <div class="exercise-3__instructions">
-      <h2>
-        Exercise 3
-      </h2>
-      <p>
-        For this exercise, you'll create a component (or components) that query a REST API of your choice and render the data you get back. The <code>SOExample</code> component below has been provided as a brief example.
-      </p>
+    <p-heading heading="2">
+      Exercise 3: REST API
+    </p-heading>
 
-      <InfoBox>
-        <em>Note:</em> This exercise is more open-ended than the previous exercises. Use this as an opportunity to show off your design chops!
-      </InfoBox>
+    <p>
+      For this exercise, you'll create a component (or components) that query a REST API of your choice and render the data you get back. The <code>SOExample</code> component below has been provided as a brief example.
+    </p>
 
-      <ul class="instruction-list ma-auto my-6">
-        <strong>To complete this exercise, ensure that you have...</strong>
+    <InfoBox>
+      <em>Note:</em> This exercise is more open-ended than the previous exercises. Use this as an opportunity to show off your design chops!
+    </InfoBox>
+
+    <ul>
+      <strong>To complete this exercise, ensure that you have...</strong>
+      <li>
+        replaced the <code>SOExample</code> component with your own component
+      </li>
+      <li>pulled some data from a REST API of your choice</li>
+      <li>rendered that data in the mode of your choosing</li>
+    </ul>
+
+    <p>
+      You may use any publicly-available REST API. Here are some ideas to help you get started.
+      <ul>
         <li>
-          replaced the <code>SOExample</code> component with your own component
+          <a href="https://api.stackexchange.com/docs" target="_blank">Stack Exchange API</a>
         </li>
-        <li>pulled some data from a REST API of your choice</li>
-        <li>rendered that data in the mode of your choosing</li>
+        <li>
+          <a href="https://api.nasa.gov/index.html" target="_blank">NASA Open APIs</a>
+        </li>
+        <li>
+          <a href="https://github.com/r-spacex/SpaceX-API" target="_blank">SpaceX API</a>
+        </li>
+        <li>
+          <a href="https://restcountries.com/" target="_blank">Countries API</a>
+        </li>
+        <li>
+          <a href="https://docs.thedogapi.com/" target="_blank">The Dog API</a>
+        </li>
+        <li>
+          <a href="https://docs.thecatapi.com/" target="_blank">The Cat API</a>
+        </li>
       </ul>
+    </p>
 
-      <p>
-        You may use any publicly-available REST API. Here are some ideas to help you get started.
-        <ul>
-          <li>
-            <a href="https://api.stackexchange.com/docs" target="_blank">Stack Exchange API</a>
-          </li>
-          <li>
-            <a href="https://api.nasa.gov/index.html" target="_blank">NASA Open APIs</a>
-          </li>
-          <li>
-            <a href="https://github.com/r-spacex/SpaceX-API" target="_blank">SpaceX API</a>
-          </li>
-          <li>
-            <a href="https://restcountries.com/" target="_blank">Countries API</a>
-          </li>
-          <li>
-            <a href="https://docs.thedogapi.com/" target="_blank">The Dog API</a>
-          </li>
-          <li>
-            <a href="https://docs.thecatapi.com/" target="_blank">The Cat API</a>
-          </li>
-        </ul>
-      </p>
-
-      <p>
-        Modify the following component as you see fit to accomplish the above stories.
-      </p>
-    </div>
+    <p>
+      Modify the following component as you see fit to accomplish the above stories.
+    </p>
     <!-- Please do not modify the code between these comments! -->
 
     <!-- You may modify any code beneath this line -->
     <SOExample />
-  </div>
+  </p-content>
 </template>
 
 <script lang="ts" setup>
