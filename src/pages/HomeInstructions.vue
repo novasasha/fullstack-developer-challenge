@@ -102,7 +102,7 @@
         </p-code> file as part of your challenge, you can run the following command from the root of the project directory to automatically remove / replace all of the above:
       </p>
 
-      <p-terminal :command="command" />
+      <p-terminal class="mx-auto" :command="command" />
     </p-content>
   </p-content>
 </template>

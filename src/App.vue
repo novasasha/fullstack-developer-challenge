@@ -8,6 +8,8 @@
           Full Stack Developer Challenge
         </p-heading>
 
+        <p-theme-toggle />
+
         <div class="app__navigation">
           <template v-for="item in navItems" :key="item.to">
             <div class="app__navigation-item">
@@ -46,7 +48,11 @@
 }
 
 .app__heading { @apply
-  text-center
+  flex
+  flex-col
+  items-center
+  justify-center
+  gap-2
 }
 
 .app__heading-logo { @apply

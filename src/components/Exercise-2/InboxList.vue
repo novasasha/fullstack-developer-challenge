@@ -81,7 +81,8 @@
   drop-shadow-md
   h-16
   px-6
-  bg-teal-700
+  bg-teal-600
+  text-white
 }
 
 .inbox-list__messages { @apply
