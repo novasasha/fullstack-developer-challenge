@@ -66,33 +66,38 @@
   }
 </script>
 
-<style lang="scss">
-.inbox-list {
-  background-color: white;
-  border-radius: 4px;
-  box-shadow: 0 3px 3px -2px rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.14),
-    0 1px 8px 0 rgba(0, 0, 0, 0.12) !important;
+<style>
+.inbox-list { @apply
+  rounded-lg
+  overflow-hidden
+  shadow-md
+  bg-background
+  max-h-[600px]
+  grid
+  grid-rows-[64px,1fr]
 }
 
-.inbox-list__top-bar {
-  display: flex;
-  align-items: center;
-  color: white;
-  background-color: #76d7c4;
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
-    0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
-  height: 64px;
-  justify-content: space-between;
-  padding: 12px 24px;
+.inbox-list__top-bar { @apply
+  flex
+  items-center
+  justify-between
+  drop-shadow-md
+  h-16
+  px-6
+  bg-teal-700
 }
 
-.inbox-list__actions {
-  display: flex;
-  gap: 24px;
+.inbox-list__messages { @apply
+  overflow-y-auto
 }
 
-.inbox-list__title {
-  font-size: 1.5em;
-  font-weight: bold;
+.inbox-list__actions { @apply
+  flex
+  gap-6
+}
+
+.inbox-list__title { @apply
+  text-xl
+  font-bold
 }
 </style>
