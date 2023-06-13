@@ -82,8 +82,8 @@
 }
 
 .message-item__checkbox-icon { @apply
-  h-6
-  w-6
+  h-5
+  w-5
 }
 
 .message-item__checkbox { @apply
@@ -92,8 +92,8 @@
   border
   border-foreground-50
   rounded
-  w-6
-  h-6
+  w-5
+  h-5
   mr-4
 }
 
