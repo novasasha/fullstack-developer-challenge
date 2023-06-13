@@ -44,16 +44,6 @@
     <!-- Please do not modify the code between these comments! -->
 
     <!-- You may modify any code beneath this line -->
-    <div class="exercise-2__results">
-      <InboxList :messages="messagingStore.messages" />
-    </div>
+    <router-view />
   </div>
 </template>
-
-<script lang="ts" setup>
-  import InboxList from '@/components/Exercise-1/InboxList.vue'
-  import InfoBox from '@/components/InfoBox.vue'
-  import { useMessagingStore } from '@/stores/messaging'
-
-  const messagingStore = useMessagingStore()
-</script>

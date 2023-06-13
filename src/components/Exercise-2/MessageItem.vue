@@ -20,7 +20,7 @@
 
 <script lang="ts" setup>
   import { computed, PropType } from 'vue'
-  import { Message } from '@/types/Exercise-1/Message'
+  import { Message } from '@/types/Message'
 
   const props = defineProps({
     message: {

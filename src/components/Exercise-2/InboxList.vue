@@ -27,16 +27,13 @@
 
 
 <script lang="ts" setup>
-  import { computed, PropType, reactive } from 'vue'
-  import MessageItem from '@/components/Exercise-1/MessageItem.vue'
-  import { Message } from '@/types/Exercise-1/Message'
+  import { computed, reactive } from 'vue'
+  import MessageItem from '@/components/Exercise-2/MessageItem.vue'
+  import { useMessagingStore } from '@/stores/messaging'
+  import { Message } from '@/types/Message'
 
-  defineProps({
-    messages: {
-      type: Array as PropType<Message[]>,
-      default: () => [],
-    },
-  })
+
+  const { messages } = useMessagingStore()
 
   const selectedMessages: Message[] = reactive([])
 
