@@ -1,92 +1,83 @@
 <template>
-  <div id="app" class="app">
-    <div class="app__heading">
-      <img alt="Prefect logo" class="app__heading-logo" src="@/assets/logo.svg">
-      <h2>
-        Full Stack Developer Challenge
-      </h2>
+  <p-layout-default id="app" class="app">
+    <template #header>
+      <div class="app__heading">
+        <p-icon alt="Prefect logo" class="app__heading-logo" icon="PrefectLight" />
 
-      <div class="app__navigation">
-        <div class="app__navigation-item">
-          <p-link :to="{ name: 'instructions' }" exact>
-            Instructions
-          </p-link>
-        </div>
-        <div class="app__navigation-item">
-          <p-link :to="{ name: 'exercise-1' }">
-            Exercise #1
-          </p-link>
-        </div>
-        <div class="app__navigation-item">
-          <p-link :to="{ name: 'exercise-2' }">
-            Exercise #2
-          </p-link>
-        </div>
-        <div class="app__navigation-item">
-          <p-link :to="{ name: 'exercise-3' }">
-            Exercise #3
-          </p-link>
+        <p-heading heading="1">
+          Full Stack Developer Challenge
+        </p-heading>
+
+        <div class="app__navigation">
+          <template v-for="item in navItems" :key="item.to">
+            <div class="app__navigation-item">
+              <p-link :to="item.to" exact>
+                {{ item.title }}
+              </p-link>
+            </div>
+          </template>
         </div>
       </div>
-    </div>
+    </template>
 
     <div class="app__router-view">
       <router-view />
     </div>
-  </div>
+  </p-layout-default>
 </template>
 
 <script lang="ts" setup>
   import { useColorTheme } from '@prefecthq/prefect-design'
 
   useColorTheme()
+
+  const navItems = [
+    { title: 'Instructions', to: '/' },
+    { title: 'Exercise #1', to: '/exercise-1' },
+    { title: 'Exercise #2', to: '/exercise-2' },
+    { title: 'Exercise #3', to: '/exercise-3' },
+  ]
 </script>
 
 <style>
 .app { @apply
-  !text-red-500
+  text-foreground
+  pb-32
 }
 
-.app__heading {
-  text-align: center;
+.app__heading { @apply
+  text-center
 }
 
-.app__heading-logo {
-  max-width: 200px;
+.app__heading-logo { @apply
+  mx-auto
+  my-4
+  h-12
+  w-12
 }
 
-.app__navigation {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.app__navigation { @apply
+  flex
+  justify-center
+  flex-wrap
 }
 
-.app__navigation-item {
-  white-space: nowrap;
+.app__navigation-item { @apply
+  whitespace-nowrap
 }
 
 .app__navigation-item .router-link-active { @apply
   text-foreground
+  no-underline
 }
 
-.app__navigation-item::after {
+.app__navigation-item:not(:last-child)::after {
   content: "|";
   padding: 0 8px;
 }
 
-.app__navigation-item:last-child::after {
-    content: none;
-}
-
-
-.app__router-view {
-  max-width: 750px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-a {
-  color: #27b1ff;
-  font-weight: bold;
+.app__router-view { @apply
+  mx-auto
+  max-w-4xl
 }
 </style>
