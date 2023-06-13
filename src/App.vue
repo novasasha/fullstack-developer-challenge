@@ -36,12 +36,20 @@
   </div>
 </template>
 
-<style lang="scss">
+<script lang="ts" setup>
+  import { useColorTheme } from '@prefecthq/prefect-design'
+
+  useColorTheme()
+</script>
+
+<style>
 #app {
-  color: #2c3e50;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#app { @apply
+  text-foreground
 }
 
 .app__heading {
@@ -60,19 +68,22 @@
 
 .app__navigation-item {
   white-space: nowrap;
-  .router-link-active {
-    color: #2c3e50;
-    text-decoration: none;
-  }
-
-  &::after {
-    content: "|";
-    padding: 0 8px;
-  }
-  &:last-child::after {
-    content: none;
-  }
 }
+
+.app__navigation-item .router-link-active {
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+.app__navigation-item::after {
+  content: "|";
+  padding: 0 8px;
+}
+
+.app__navigation-item:last-child::after {
+    content: none;
+}
+
 
 .app__router-view {
   max-width: 750px;
@@ -83,20 +94,5 @@
 a {
   color: #27b1ff;
   font-weight: bold;
-}
-
-pre {
-  code {
-    color: #333;
-    display: block;
-    font-size: 0.9rem;
-  }
-}
-
-code {
-  background-color: #eee;
-  color: crimson;
-  padding: 2px 4px;
-  border-radius: 4px;
 }
 </style>
