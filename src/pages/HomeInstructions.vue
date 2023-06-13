@@ -16,19 +16,21 @@
       </p>
 
       <p>
-        To start, this challenge consists of 3 exercises. The goal is to get a sense for how you solve problems and implement your code - these questions are not designed to trick you.
+        This challenge consists of 3 exercises. The goal is to get a sense for how you solve problems and implement your code - these questions are not designed to trick you.
       </p>
-
-      <InfoBox>
-        <em>Tip #1:</em> Comments are a great way to explain your thinking and the choices you make as you work on each exercise, particularly in spots where you're less sure of your solution.
-      </InfoBox>
 
       <p>
-        No additional packages or libraries are required to complete this challenge but you may add any that you wish. Please do not modify this instructions component (found at <code>/src/pages/HomeInstructions.vue</code>) or any of the instruction text for the exercise (these will be clearly denoted in the code) until your submission has been graded. Any other code (including router, store, styling, and components) are free for you to modify at your discretion.
+        No additional packages or libraries are required to complete this challenge but you may add any that you wish. Please do not modify this instructions component (found at <p-code inline>
+          /src/pages/HomeInstructions.vue
+        </p-code>) or any of the instruction text for the exercise (these will be clearly denoted in the code) until your submission has been graded. Any other code (including router, store, styling, and components) are free for you to modify at your discretion.
       </p>
 
       <InfoBox>
-        <em>Tip #2:</em> Be creative! This is an opportunity to express yourself through code and design.
+        <em>Tip #2:</em> The <p-code inline>
+          p-
+        </p-code> prefixed components in this application come from the <p-link href="https://prefect-design.netlify.app">
+          Prefect Design
+        </p-link> library. You're free to use these components in your solution if you wish but you're not required to do so.
       </InfoBox>
     </p-content>
 

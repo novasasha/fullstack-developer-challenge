@@ -5,11 +5,8 @@
         {{ selectedMessagesLabel }}
       </div>
       <div class="inbox-list__actions">
-        <!-- TODO: replace these -->
-        <!--
-          <FontAwesomeIcon class="fa-lg" :icon="['fas', 'search']" />
-          <FontAwesomeIcon class="fa-lg" :icon="['fas', 'ellipsis-v']" />
-        -->
+        <p-icon icon="MagnifyingGlassIcon" size="large" />
+        <p-icon icon="EllipsisVerticalIcon" size="large" />
       </div>
     </div>
 
