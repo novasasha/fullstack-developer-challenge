@@ -41,10 +41,6 @@
         </li>
       </ul>
     </p-content>
-
-    <p>
-      Modify components as you see fit to accomplish the above stories.
-    </p>
     <!-- Please do not modify the code between these comments! -->
 
     <!-- You may modify any code beneath this line -->
