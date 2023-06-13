@@ -8,24 +8,24 @@
 
       <div class="app__navigation">
         <div class="app__navigation-item">
-          <router-link :to="{ name: 'instructions' }" exact>
+          <p-link :to="{ name: 'instructions' }" exact>
             Instructions
-          </router-link>
+          </p-link>
         </div>
         <div class="app__navigation-item">
-          <router-link :to="{ name: 'exercise-1' }">
+          <p-link :to="{ name: 'exercise-1' }">
             Exercise #1
-          </router-link>
+          </p-link>
         </div>
         <div class="app__navigation-item">
-          <router-link :to="{ name: 'exercise-2' }">
+          <p-link :to="{ name: 'exercise-2' }">
             Exercise #2
-          </router-link>
+          </p-link>
         </div>
         <div class="app__navigation-item">
-          <router-link :to="{ name: 'exercise-3' }">
+          <p-link :to="{ name: 'exercise-3' }">
             Exercise #3
-          </router-link>
+          </p-link>
         </div>
       </div>
     </div>
@@ -43,13 +43,8 @@
 </script>
 
 <style>
-#app {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#app { @apply
-  text-foreground
+.app { @apply
+  !text-red-500
 }
 
 .app__heading {
@@ -70,9 +65,8 @@
   white-space: nowrap;
 }
 
-.app__navigation-item .router-link-active {
-  color: #2c3e50;
-  text-decoration: none;
+.app__navigation-item .router-link-active { @apply
+  text-foreground
 }
 
 .app__navigation-item::after {

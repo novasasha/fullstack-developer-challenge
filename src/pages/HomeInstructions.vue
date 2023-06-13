@@ -4,7 +4,7 @@
       Instructions
     </h2>
 
-    <div class="home-instructions__block">
+    <p-content class="home-instructions__block">
       <h3>
         Overview
       </h3>
@@ -33,23 +33,44 @@
       <InfoBox>
         <em>Tip #2:</em> Be creative! This is an opportunity to express yourself through code and design.
       </InfoBox>
-    </div>
+    </p-content>
 
-    <div class="home-instructions__block">
+    <p-content class="home-instructions__block">
       <h3>
         Submission
       </h3>
       <p>
-        This project should be submitted by adding <a href="https://github.com/znicholasbrown" target="_blank">@znicholasbrown</a>
-        and <a href="https://github.com/zhen0" target="_blank">@zhen0</a>
-        and <a href="https://github.com/pleek91" target="_blank">@pleek91</a>
-        and <a href="https://github.com/abrookins" target="_blank">@abrookins</a>
-        as collaborators to your cloned repository on GitHub. Once you've done so,
-        please send an email to <a href="mailto:jenny@prefect.io" target="_blank">jenny@prefect.io</a> to confirm your submission.
-      </p>
-    </div>
+        This project should be submitted by adding the following users as collaborators to your cloned repository on GitHub:
+        <ul>
+          <li>
+            <p-link href="https://github.com/znicholasbrown" target="_blank">
+              @znicholasbrown
+            </p-link>
+          </li>
+          <li>
+            <p-link href="https://github.com/zhen0" target="_blank">
+              @zhen0
+            </p-link>
+          </li>
+          <li>
+            <p-link href="https://github.com/pleek91" target="_blank">
+              @pleek91
+            </p-link>
+          </li>
+          <li>
+            <p-link href="https://github.com/abrookins" target="_blank">
+              @abrookins
+            </p-link>
+          </li>
+        </ul>
 
-    <div class="home-instructions__block">
+        Once you've done so, please send an email to <p-link href="mailto:jenny@prefect.io" target="_blank">
+          jenny@prefect.io
+        </p-link> to confirm your submission.
+      </p>
+    </p-content>
+
+    <p-content class="home-instructions__block">
       <h3>
         Making the repo public
       </h3>
@@ -63,22 +84,20 @@
         If you haven't modified the <code>index.html</code> file as part of your challenge, you can run the following command from the root of the project directory to automatically remove / replace all of the above:
       </p>
 
-      <pre class="home-instructions__replace-script">
-        <code>
-          <span class="home-instructions__replace-script-prefix">$</span>mv public/index-template.html public/index.html && \
-            rm public/{*.png,*.xml,*.ico,*.svg,*.webmanifest} && \
-            mv src/assets/vue-logo.svg src/assets/logo.svg
-        </code>
-      </pre>
-    </div>
+      <p-terminal class="home-instructions__replace-script" :command="command" />
+    </p-content>
   </div>
 </template>
 
 <script lang="ts" setup>
   import InfoBox from '@/components/InfoBox.vue'
+
+  const command = 'mv public/index-template.html public/index.html && \
+    rm public/{*.png,*.xml,*.ico,*.svg,*.webmanifest} && \
+    mv src/assets/vue-logo.svg src/assets/logo.svg'
 </script>
 
-<style lang="scss">
+<style>
 .home-instructions__replace-script-prefix {
   margin-right: 4px;
 }

@@ -8,4 +8,7 @@
     "cSpell.words": [
         "pinia"
     ],
+    "css.customData": [
+        ".vscode/tailwind.json"
+    ]
 }
