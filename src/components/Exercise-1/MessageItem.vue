@@ -1,7 +1,8 @@
 <template>
   <div class="message-item" :class="classes.item" @click.prevent="toggleActive">
     <div class="message-item__checkbox">
-      <FontAwesomeIcon class="fa-lg" :icon="['far', classes.icon]" />
+      <!-- TODO: Replace this -->
+      <!-- <FontAwesomeIcon class="fa-lg" :icon="['far', classes.icon]" /> -->
     </div>
     <div>
       <div class="message-item__from">
@@ -18,7 +19,6 @@
 </template>
 
 <script lang="ts" setup>
-  import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
   import { computed, PropType } from 'vue'
   import { Message } from '@/types/Exercise-1/Message'
 

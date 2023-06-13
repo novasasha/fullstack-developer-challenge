@@ -1,7 +1,8 @@
 <template>
   <div class="so-example">
     <h3 class="so-example__title">
-      <FontAwesomeIcon class="so-example__logo" :icon="['fab', 'stack-overflow']" />
+      <!-- TODO: Replace this -->
+      <!-- <FontAwesomeIcon class="so-example__logo" :icon="['fab', 'stack-overflow']" /> -->
       Stack Overflow (Example)
     </h3>
     <div class="so-example__questions">
@@ -38,7 +39,6 @@
 </template>
 
 <script lang="ts" setup>
-  import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
   import { onMounted, reactive } from 'vue'
 
   type Question = {
