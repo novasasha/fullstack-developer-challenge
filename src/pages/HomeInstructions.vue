@@ -1,13 +1,10 @@
 <template>
-  <div class="home-instructions">
-    <h2>
+  <p-content class="home-instructions">
+    <p-heading heading="2">
       Instructions
-    </h2>
+    </p-heading>
 
-    <p-content class="home-instructions__block">
-      <h3>
-        Overview
-      </h3>
+    <p-content>
       <p>
         If you've made it this far you've already completed the first step by installing the project dependencies and starting your Vue development server... good job!
       </p>
@@ -35,10 +32,12 @@
       </InfoBox>
     </p-content>
 
-    <p-content class="home-instructions__block">
-      <h3>
+    <p-divider />
+
+    <p-content>
+      <p-heading heading="4">
         Submission
-      </h3>
+      </p-heading>
       <p>
         This project should be submitted by adding the following users as collaborators to your cloned repository on GitHub:
         <ul>
@@ -70,23 +69,40 @@
       </p>
     </p-content>
 
-    <p-content class="home-instructions__block">
-      <h3>
+    <p-divider />
+
+    <p-content>
+      <p-heading heading="4">
         Making the repo public
-      </h3>
+      </p-heading>
+
       <p>
-        <u>The work you do on this project is your own</u>. As such, you can make it publicly available at your discretion (on your GitHub, as part of a portfolio etc.).
+        <strong>The work you do on this project is your own</strong>. As such, you can make it publicly available at your discretion (on your GitHub, as part of a portfolio etc.).
       </p>
       <p>
-        However, if you plan to make this repository public, <u>please do not do so until after your submission has been graded</u> (we'll let you know when that is!). In addition, please remove or replace Prefect in the <code>&lt;title&gt;</code> block of the root html file (found in <code>/public/index.html</code>) as well as the <code>&lt;link&gt;</code> and <code>&lt;meta&gt;</code> blocks between the comments in that same file as well as all associated logos. Last, please remove or replace the Prefect logo in the root application file (found in <code>/src/App.vue</code>) and the associated <code>.svg</code> found in the assets folder.
+        However, if you plan to make this repository public, <strong>please do not do so until after your submission has been graded</strong> (we'll let you know when that is!). In addition, please remove or replace Prefect in the <p-code inline>
+          &lt;title&gt;
+        </p-code> block of the root html file (found in  <p-code inline>
+          /public/index.html
+        </p-code>) as well as the <p-code inline>
+          &lt;link&gt;
+        </p-code> and <p-code inline>
+          &lt;meta&gt;
+        </p-code> blocks between the comments in that same file as well as all associated logos. Last, please remove or replace the Prefect logo in the root application file (found in <p-code inline>
+          /src/App.vue
+        </p-code>) and the associated <p-code inline>
+          .svg
+        </p-code> found in the assets folder.
       </p>
       <p>
-        If you haven't modified the <code>index.html</code> file as part of your challenge, you can run the following command from the root of the project directory to automatically remove / replace all of the above:
+        If you haven't modified the <p-code inline>
+          index.html
+        </p-code> file as part of your challenge, you can run the following command from the root of the project directory to automatically remove / replace all of the above:
       </p>
 
-      <p-terminal class="home-instructions__replace-script" :command="command" />
+      <p-terminal :command="command" />
     </p-content>
-  </div>
+  </p-content>
 </template>
 
 <script lang="ts" setup>
@@ -96,13 +112,3 @@
     rm public/{*.png,*.xml,*.ico,*.svg,*.webmanifest} && \
     mv src/assets/vue-logo.svg src/assets/logo.svg'
 </script>
-
-<style>
-.home-instructions__replace-script-prefix {
-  margin-right: 4px;
-}
-
-.home-instructions__block {
-  margin-bottom: 12px;
-}
-</style>

@@ -80,4 +80,14 @@
   mx-auto
   max-w-4xl
 }
+
+ul { @apply
+  list-disc
+  list-inside
+  my-4
+}
+
+ul li { @apply
+  mb-1
+}
 </style>
