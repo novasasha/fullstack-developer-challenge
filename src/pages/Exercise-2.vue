@@ -44,10 +44,14 @@
     <!-- Please do not modify the code between these comments! -->
 
     <!-- You may modify any code beneath this line -->
-    <router-view />
+    <InboxList :messages="messages" />
   </p-content>
 </template>
 
 <script lang="ts" setup>
+  import InboxList from '@/components/Exercise-2/InboxList.vue'
   import InfoBox from '@/components/InfoBox.vue'
+  import { useMessagingStore } from '@/stores/messaging'
+
+  const { messages } = useMessagingStore()
 </script>

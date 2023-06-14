@@ -26,11 +26,11 @@
 <script lang="ts" setup>
   import { computed, reactive } from 'vue'
   import MessageItem from '@/components/Exercise-2/MessageItem.vue'
-  import { useMessagingStore } from '@/stores/messaging'
   import { Message } from '@/types/Message'
 
-
-  const { messages } = useMessagingStore()
+  defineProps<{
+    messages: Message[],
+  }>()
 
   const selectedMessages: Message[] = reactive([])
 

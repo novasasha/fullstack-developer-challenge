@@ -15,14 +15,6 @@ const routes: RouteRecordRaw[] = [
     path: '/exercise-2',
     name: 'exercise-2',
     component: () => import('@/pages/Exercise-2.vue'),
-    redirect: { name: 'inbox' },
-    children: [
-      {
-        path: 'inbox',
-        name: 'inbox',
-        component: () => import('@/components/Exercise-2/InboxList.vue'),
-      },
-    ],
   },
   {
     path: '/exercise-3',
