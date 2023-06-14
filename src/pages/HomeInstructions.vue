@@ -25,13 +25,13 @@
         </p-code>) or any of the instruction text for the exercise (these will be clearly denoted in the code) until your submission has been graded. Any other code (including router, store, styling, and components) are free for you to modify at your discretion.
       </p>
 
-      <InfoBox>
-        <em>Tip #2:</em> The <p-code inline>
+      <p-message info>
+        <em>Tip:</em> The <p-code inline>
           p-
         </p-code> prefixed components in this application come from the <p-link href="https://prefect-design.netlify.app">
           Prefect Design
         </p-link> library. You're free to use these components in your solution if you wish but you're not required to do so.
-      </InfoBox>
+      </p-message>
     </p-content>
 
     <p-divider />
@@ -91,7 +91,3 @@
     </p-content>
   </p-content>
 </template>
-
-<script lang="ts" setup>
-  import InfoBox from '@/components/InfoBox.vue'
-</script>

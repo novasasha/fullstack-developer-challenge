@@ -10,9 +10,9 @@
       For this exercise, you'll create a component (or components) that query a REST API of your choice and render the data you get back. The <code>SOExample</code> component below has been provided as a brief example.
     </p>
 
-    <InfoBox>
-      <em>Note:</em> This exercise is more open-ended than the previous exercises. Use this as an opportunity to show off your design chops!
-    </InfoBox>
+    <p-message info>
+      <em>Tip:</em> This exercise is more open-ended than the previous exercises. Use this as an opportunity to show off your design chops!
+    </p-message>
 
     <ul>
       <strong>To complete this exercise, ensure that you have...</strong>
@@ -59,5 +59,4 @@
 
 <script lang="ts" setup>
   import SOExample from '@/components/Exercise-3/SOExample.vue'
-  import InfoBox from '@/components/InfoBox.vue'
 </script>
