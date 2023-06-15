@@ -75,4 +75,3 @@ This project is setup to use the same ESLint config our frontend developers actu
 _The work you do on this project is your own_. As such, you can make it publicly  available at your discretion (on your GitHub, as part of a portfolio etc.).
 
 If you plan to make this repository public, **please do not do so until after your submission has been graded** (we'll let you know when that is!). In addition, please  remove or replace Prefect in the `<title>` block of the root html file (found in `/public/index.html`) and any associated logos.
-```
