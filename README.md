@@ -74,12 +74,5 @@ This project is setup to use the same ESLint config our frontend developers actu
 
 _The work you do on this project is your own_. As such, you can make it publicly  available at your discretion (on your GitHub, as part of a portfolio etc.).
 
-If you plan to make this repository public, **please do not do so until after your  submission has been graded** (we'll let you know when that is!). In addition, please  remove or replace Prefect in the `<title>` block of the root html file (found in `/public/index.html`), the `<link>` and `<meta>` blocks between the comments in that same  file, as well as the associated logos in that folder. Last, please remove or  replace the Prefect logo in the root application file (found in `/src/App.vue`) and the  associated `.svg` found in the assets folder.
-
-If you haven't modified the `index.html` file as part of your challenge (you shouldn't  need to), you can run the following command from the root of the project directory to automatically remove / replace all of the above:
-
-```bash
-$ mv public/index-template.html public/index.html && \
-  rm public/{*.png,*.xml,*.ico,*.svg,*.webmanifest} && \
-  mv src/assets/vue-logo.svg src/assets/logo.svg
+If you plan to make this repository public, **please do not do so until after your submission has been graded** (we'll let you know when that is!). In addition, please  remove or replace Prefect in the `<title>` block of the root html file (found in `/public/index.html`) and any associated logos.
 ```
