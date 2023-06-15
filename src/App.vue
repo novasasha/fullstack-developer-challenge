@@ -1,102 +1,99 @@
 <template>
-  <div id="app" class="app">
-    <div class="app__heading">
-      <img alt="Prefect logo" class="app__heading-logo" src="@/assets/logo.svg">
-      <h2>
-        Full Stack Developer Challenge
-      </h2>
+  <p-layout-default id="app" class="app">
+    <template #header>
+      <div class="app__heading">
+        <p-icon alt="Prefect logo" class="app__heading-logo" icon="PrefectLight" />
 
-      <div class="app__navigation">
-        <div class="app__navigation-item">
-          <router-link :to="{ name: 'instructions' }" exact>
-            Instructions
-          </router-link>
-        </div>
-        <div class="app__navigation-item">
-          <router-link :to="{ name: 'exercise-1' }">
-            Exercise #1
-          </router-link>
-        </div>
-        <div class="app__navigation-item">
-          <router-link :to="{ name: 'exercise-2' }">
-            Exercise #2
-          </router-link>
-        </div>
-        <div class="app__navigation-item">
-          <router-link :to="{ name: 'exercise-3' }">
-            Exercise #3
-          </router-link>
+        <p-heading heading="1">
+          Full-Stack Developer Challenge
+        </p-heading>
+
+        <p-theme-toggle />
+
+        <div class="app__navigation">
+          <template v-for="item in navItems" :key="item.to">
+            <div class="app__navigation-item">
+              <p-link :to="item.to" exact>
+                {{ item.title }}
+              </p-link>
+            </div>
+          </template>
         </div>
       </div>
-    </div>
+    </template>
 
     <div class="app__router-view">
       <router-view />
     </div>
-  </div>
+  </p-layout-default>
 </template>
 
-<style lang="scss">
-#app {
-  color: #2c3e50;
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+<script lang="ts" setup>
+  import { useColorTheme } from '@prefecthq/prefect-design'
+
+  useColorTheme()
+
+  const navItems = [
+    { title: 'Instructions', to: '/' },
+    { title: 'Exercise #1', to: '/exercise-1' },
+    { title: 'Exercise #2', to: '/exercise-2' },
+    { title: 'Exercise #3', to: '/exercise-3' },
+  ]
+</script>
+
+<style>
+.app { @apply
+  text-foreground
+  pb-32
 }
 
-.app__heading {
-  text-align: center;
+.app__heading { @apply
+  flex
+  flex-col
+  items-center
+  justify-center
+  gap-2
 }
 
-.app__heading-logo {
-  max-width: 200px;
+.app__heading-logo { @apply
+  mx-auto
+  my-4
+  h-12
+  w-12
 }
 
-.app__navigation {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.app__navigation { @apply
+  flex
+  justify-center
+  flex-wrap
 }
 
-.app__navigation-item {
-  white-space: nowrap;
-  .router-link-active {
-    color: #2c3e50;
-    text-decoration: none;
-  }
-
-  &::after {
-    content: "|";
-    padding: 0 8px;
-  }
-  &:last-child::after {
-    content: none;
-  }
+.app__navigation-item { @apply
+  whitespace-nowrap
 }
 
-.app__router-view {
-  max-width: 750px;
-  margin-left: auto;
-  margin-right: auto;
+.app__navigation-item .router-link-active { @apply
+  text-foreground
+  no-underline
 }
 
-a {
-  color: #27b1ff;
-  font-weight: bold;
+.app__navigation-item:not(:last-child)::after {
+  content: "|";
+  padding: 0 8px;
 }
 
-pre {
-  code {
-    color: #333;
-    display: block;
-    font-size: 0.9rem;
-  }
+.app__router-view { @apply
+  mx-auto
+  max-w-4xl
 }
 
-code {
-  background-color: #eee;
-  color: crimson;
-  padding: 2px 4px;
-  border-radius: 4px;
+ul { @apply
+  list-disc
+  list-inside
+  my-4
+}
+
+ul li { @apply
+  mb-1
 }
 </style>

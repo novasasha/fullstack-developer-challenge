@@ -1,17 +1,18 @@
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faStackOverflow } from '@fortawesome/free-brands-svg-icons'
-import { faSquare, faSquareCheck } from '@fortawesome/free-regular-svg-icons'
-import { faSearch, faEllipsisV, faCheckCircle } from '@fortawesome/free-solid-svg-icons'
+import { plugin as PrefectDesign } from '@prefecthq/prefect-design'
 import { createPinia } from 'pinia'
 import { createApp } from 'vue'
-import App from '@/App.vue'
 import router from '@/router'
+
+import '@prefecthq/prefect-design/dist/style.css'
+
+// eslint-disable-next-line import/order
+import App from '@/App.vue'
 
 const pinia = createPinia()
 
-library.add(faStackOverflow, faSquare, faSquareCheck, faSearch, faEllipsisV, faCheckCircle)
 
 const app = createApp(App)
+  .use(PrefectDesign)
   .use(router)
   .use(pinia)
 

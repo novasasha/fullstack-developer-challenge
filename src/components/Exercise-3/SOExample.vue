@@ -1,9 +1,10 @@
 <template>
   <div class="so-example">
-    <h3 class="so-example__title">
-      <FontAwesomeIcon class="so-example__logo" :icon="['fab', 'stack-overflow']" />
+    <h4 class="so-example__title">
+      <p-icon class="so-example__logo" icon="CircleStackIcon" size="large" />
       Stack Overflow (Example)
-    </h3>
+    </h4>
+
     <div class="so-example__questions">
       <template v-for="question in questions" :key="question.question_id">
         <div class="so-example__question">
@@ -38,7 +39,6 @@
 </template>
 
 <script lang="ts" setup>
-  import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
   import { onMounted, reactive } from 'vue'
 
   type Question = {
@@ -70,7 +70,7 @@
   }
 
   const questions: Question[] = reactive([])
-  const url = 'https://api.stackexchange.com/2.3/questions?pagesize=6&order=desc&sort=activity&site=stackoverflow&tagged=prefect'
+  const url = 'https://api.stackexchange.com/2.3/questions?pagesize=10&order=desc&sort=activity&site=stackoverflow&tagged=prefect'
 
   onMounted(async () => {
     const response = await fetch(url)
@@ -80,87 +80,91 @@
   })
 </script>
 
-<style lang="scss">
-.so-example {
-  padding: 24px 12px;
+<style>
+.so-example__title { @apply
+  flex
+  items-center
+  justify-center
+  gap-2
+  mb-6
+  text-xl
 }
 
-.so-example__logo {
-  color: #e68e47;
+.so-example__logo { @apply
+  text-amber-500
 }
 
-.so-example__title,
-.so-example__question-title {
-  margin-top: 0;
-  text-align: center;
+.so-example__questions { @apply
+  flex
+  flex-wrap
+  justify-center
+  items-start
+  gap-6
 }
 
-.so-example__questions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: start;
-  gap: 24px;
-}
-
-.so-example__question {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  max-width: 300px;
-  background-color: #f3f3f3;
-  padding: 8px;
-}
-
-.so-example__question-title {
-  text-decoration: none;
-  color: #323232;
+.so-example__question { @apply
+  flex
+  flex-col
+  gap-4
+  px-4
+  py-2
+  max-w-xs
+  bg-slate-50
+  text-slate-950
+  rounded-lg
 }
 
 .so-example__question-owner {
-  display: grid;
-  column-gap: 4px;
-  align-items: center;
   grid-template-areas:
     'profile name answered'
     'profile reputation answered';
   grid-template-columns: 40px 1fr 1fr;
-  font-size: 13px;
+
+  @apply
+  grid
+  text-sm
+  items-center
+  gap-x-1
 }
 
 .so-example__owner-name {
   grid-area: name;
-  text-decoration: none;
-  color: #157fd0;
+
+  @apply
+  text-sky-500
 }
 
 .so-example__owner-image {
   grid-area: profile;
-  width: 100%;
+
+  @apply
+  w-full
+  rounded
 }
 
 .so-example__owner-reputation {
   grid-area: reputation;
-  font-size: 12px;
+
+  @apply
+  text-xs
 }
 
-.so-example__question-answered {
-  color: #5a9e70;
+.so-example__question-answered { @apply
+  text-emerald-500
 }
 
-.so-example__tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
-  margin: 2px;
+.so-example__tags { @apply
+  flex
+  flex-wrap
+  gap-1
 }
 
-.so-example__tag {
-  font-size: 12px;
-  color: #39739d;
-  white-space: nowrap;
-  border-radius: 4px;
-  padding: 4px 8px;
-  background-color: #e1ecf4;
+.so-example__tag { @apply
+  text-xs
+  text-sky-700
+  bg-sky-100
+  rounded
+  px-2
+  py-1
 }
 </style>

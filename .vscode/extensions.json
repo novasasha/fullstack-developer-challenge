@@ -3,6 +3,6 @@
     "vue.volar",
     "vue.vscode-typescript-vue-plugin",
     "dbaeumer.vscode-eslint",
-    "syler.sass-indented"
+    "bradlc.vscode-tailwindcss",
   ]
 }
