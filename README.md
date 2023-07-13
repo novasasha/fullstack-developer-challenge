@@ -23,7 +23,7 @@ Welcome to the Prefect Fullstack Developer Challenge!
 
 This challenge consists of 3 exercises. The goal is to get a sense of how you solve problems and implement your code - the  questions are not designed to trick you.
 
-No additional packages or libraries are required but you may add any that you wish.  Please do not modify the instructions component (found at `/src/pages/HomeInstructions. vue`) or any of the instruction text for the exercise (these will be clearly denoted in  the code with an `...__instructions` class) until your submission has been graded.  Any other code (including router, store, styling, and components) are free for you to modify at your discretion.
+No additional packages or libraries are required but you may add any that you wish.  Please do not modify the instructions component (found at `/src/pages/HomeInstructions.vue`) or any of the instruction text for the exercise (these will be clearly denoted in  the code with an `...__instructions` class) until your submission has been graded.  Any other code (including router, store, styling, and components) are free for you to modify at your discretion.
 
 Continue reading for project setup and submission.
 
@@ -36,7 +36,7 @@ Continue reading for project setup and submission.
 
 ## Submission
 
-This project should be submitted by adding [@znicholasbrown](https://github.com/znicholasbrown), [@pleek91](https://github.com/pleek91), [@zhen0](https://github.com/zhen0) and [@abrookins](https://github.com/abrookins) as collaborators to your cloned repository on GitHub. Once you've done so, please send an email to [jenny@prefect.io](jenny@prefect.io) to confirm your submission.
+This project should be submitted by adding [@znicholasbrown](https://github.com/znicholasbrown), [@pleek91](https://github.com/pleek91), [@zhen0](https://github.com/zhen0), [zangell44](https://github.com/zangell44) and [@abrookins](https://github.com/abrookins) as collaborators to your cloned repository on GitHub. Once you've done so, please send an email to [jenny@prefect.io](jenny@prefect.io) to confirm your submission.
 
 ## Recommended IDE
 
