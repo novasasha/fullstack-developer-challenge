@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@prefecthq/prefect-design": "1.11.6",
-    "@prefecthq/prefect-ui-library": "1.6.42",
+    "@prefecthq/prefect-ui-library": "2.6.8",
     "autoprefixer": "^10.4.14",
     "pinia": "^2.1.4",
     "tailwindcss": "3.3.3",
