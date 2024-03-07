@@ -90,7 +90,6 @@
   flex
   items-center
   border
-  border-foreground-50
   rounded
   w-5
   h-5
@@ -108,7 +107,7 @@
 
 .message-item__subject { @apply
   text-sm
-  text-subdued-300
+  text-subdued
 }
 
 .message-item__timestamp { @apply
