@@ -43,7 +43,7 @@
 
 <style>
 .app { @apply
-  text-foreground
+  text-subdued
   pb-32
 }
 
@@ -73,7 +73,7 @@
 }
 
 .app__navigation-item .router-link-active { @apply
-  text-foreground
+  text-subdued
   no-underline
 }
 

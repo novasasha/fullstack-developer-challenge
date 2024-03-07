@@ -68,7 +68,7 @@
   rounded-lg
   overflow-hidden
   shadow-md
-  bg-background
+  bg-subdued
   max-h-[600px]
   grid
   grid-rows-[64px,1fr]

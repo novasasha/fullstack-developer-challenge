@@ -108,7 +108,7 @@
 
 .message-item__subject { @apply
   text-sm
-  text-foreground-300
+  text-subdued-300
 }
 
 .message-item__timestamp { @apply
