@@ -58,14 +58,14 @@
               @pleek91
             </p-link>
           </li>
-           <li>
+          <li>
             <p-link href="https://github.com/zangell44" target="_blank">
               @zangell44
             </p-link>
           </li>
           <li>
-            <p-link href="https://github.com/abrookins" target="_blank">
-              @abrookins
+            <p-link href="https://github.com/collincchoy" target="_blank">
+              @collincchoy
             </p-link>
           </li>
         </ul>
