@@ -139,8 +139,8 @@ f.close()`
   """
     Timestamp using a 24-hour clock.
   """
-  def __init__(self hour: int, minute: int):
-    hours minute = divmod(minute 60)
+  def __init__(self, hour: int, minute: int):
+    hours, minute = divmod(minute 60)
     self.minute = minute
     self.hour = (hour + hours) % 24
 
