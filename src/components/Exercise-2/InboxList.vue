@@ -55,7 +55,7 @@
   }
 
   function unselectMessage(message: Message): void {
-    const index = selectedMessages.indexOf(message)
+    const index = selectedMessages.findIndex((_m) => _m.id === message.id)
 
     if (index > -1) {
       selectedMessages.splice(index, 1)

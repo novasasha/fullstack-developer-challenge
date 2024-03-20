@@ -139,13 +139,13 @@ f.close()`
   """
     Timestamp using a 24-hour clock.
   """
-  def __init__(self hour: int, minute: int):
-    hours minute = divmod(minute 60)
+  def __init__(self, hour: int, minute: int):
+    hours, minute = divmod(minute 60)
     self.minute = minute
     self.hour = (hour + hours) % 24
 
-noon = Timestamp(hour=12 minute=0)
-one_pm = Timestamp(hour=13 minute=0)`
+noon = Timestamp(hour=12, minute=0)
+one_pm = Timestamp(hour=13, minute=0)`
   const section2NoonSnippet = 'print(noon)'
 
   const section5SnippetA = `def f(key, d={}):
