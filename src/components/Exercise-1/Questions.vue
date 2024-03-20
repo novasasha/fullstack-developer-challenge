@@ -144,8 +144,8 @@ f.close()`
     self.minute = minute
     self.hour = (hour + hours) % 24
 
-noon = Timestamp(hour=12 minute=0)
-one_pm = Timestamp(hour=13 minute=0)`
+noon = Timestamp(hour=12, minute=0)
+one_pm = Timestamp(hour=13, minute=0)`
   const section2NoonSnippet = 'print(noon)'
 
   const section5SnippetA = `def f(key, d={}):
