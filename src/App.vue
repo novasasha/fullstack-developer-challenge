@@ -42,11 +42,6 @@
 </script>
 
 <style>
-.app { @apply
-  text-subdued
-  pb-32
-}
-
 .app__heading { @apply
   flex
   flex-col
