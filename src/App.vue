@@ -42,6 +42,10 @@
 </script>
 
 <style>
+.app { @apply
+  p-6
+}
+
 .app__heading { @apply
   flex
   flex-col
