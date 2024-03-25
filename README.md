@@ -45,6 +45,24 @@ This project should be submitted by adding [@znicholasbrown](https://github.com/
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) Python language support with IntelliSense (Pylance), Debugging (Python Debugger), linting, formatting, and unit tests.
 
 ## Local Development
+### Recommended setup
+For your convenience, this project is configured with a [devcontainer](https://code.visualstudio.com/docs/devcontainers/containers) configuration file. 
+
+To start, you'll only need the following installed on your machine:
+1. Docker
+2. VS Code
+3. The [VS Code devcontainers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+
+For help installing any of the above, see [here](https://code.visualstudio.com/docs/devcontainers/containers#_installation).
+
+Then, once you open this repository in VS Code, you should get a prompt in the bottom-right corner to reopen in a container - click `Yes`. Upon confirmation, your window should reopen. Note: this step may take a few minutes as it will:
+1. Pull down an image and start a docker container with your local working directory mounted on at `/workspaces` and expose ports 5173 and 5174 for port forwarding so that both servers will be available from your host machine. This step will also ensure that you're using the expected python and node versions as they're pre-installed in the container.
+2. Install all python dependencies
+3. Install all node dependencies
+
+### Alternate DIY setup
+<details>
+<summary>If you choose not to use the devcontainer, see here for additional instructions.</summary>
 
 To start, make sure you're on the right versions of NodeJS and Python.
 
@@ -72,6 +90,7 @@ For Python:
 ```
 pip install -r requirements.txt
 ```
+</details>
 
 ### Transpiles and hot-reloads for development
 
