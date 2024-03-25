@@ -1,10 +1,14 @@
 from fastapi import FastAPI
+from data.messages import messages
 
 app = FastAPI()
 
-@app.get("/")
-async def read_root():
-    return {"Hello": "World"}
+@app.get("/messages")
+async def read_messages():
+    return {
+        "messages": messages,
+        "count": len(messages),
+    }
 
 
 if __name__ == "__main__":
