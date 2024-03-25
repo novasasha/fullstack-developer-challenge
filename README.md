@@ -46,26 +46,49 @@ This project should be submitted by adding [@znicholasbrown](https://github.com/
 
 ## Local Development
 
-To start, make sure you're on the right version of node.
+To start, make sure you're on the right versions of NodeJS and Python.
 
+for Node:
 ```
 nvm use
 ```
 
-Then, install the project dependencies.
+for Python:
+```
+pyenv local
+```
 
+Note that these assume you have Node Version Manager and Pyenv on your machine; you're free to use the environment managers of your choice, `.nvmrc` and `.python-version` files have been provided for convenience. 
+
+
+Then, install project dependencies.
+
+For Node:
 ```
 npm ci
 ```
 
+For Python:
+```
+pip install -r requirements.txt
+```
 
 ### Transpiles and hot-reloads for development
 
 Then, start your development server.
 
+In one terminal, start your Fast API webserver with the following (from the root directory):
+```
+python server.py
+```
+
+And in another, start your Vue application with the following:
 ```
 npm run dev
 ```
+
+You should now be able to navigate to [localhost:5173](http://localhost:5173)! (Note: you may need to modify the `PORT` variable in `.env` if you've another process running on :5174)
+
 
 ### Lints and fixes files
 
