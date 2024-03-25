@@ -42,6 +42,7 @@ This project should be submitted by adding [@znicholasbrown](https://github.com/
 
 - [VSCode](https://code.visualstudio.com/)
 - [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar) (vscode extension) is registered as a workspace recommended extension. 
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) Python language support with IntelliSense (Pylance), Debugging (Python Debugger), linting, formatting, and unit tests.
 
 ## Local Development
 
