@@ -9,8 +9,8 @@
         <p-icon icon="EllipsisVerticalIcon" size="large" />
       </div>
     </div>
-
-    <div class="inbox-list__messages">
+    <p-loading-icon v-if="loading" />
+    <div v-else class="inbox-list__messages">
       <MessageItem
         v-for="message in messages"
         :key="message.id"
@@ -29,6 +29,7 @@
   import { Message } from '@/types/Message'
 
   defineProps<{
+    loading: boolean,
     messages: Message[],
   }>()
 

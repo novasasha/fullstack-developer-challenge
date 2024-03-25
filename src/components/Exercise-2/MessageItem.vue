@@ -4,8 +4,8 @@
       <p-icon v-if="selected" icon="CheckIcon" class="message-item__checkbox-icon" />
     </div>
     <div>
-      <div class="message-item__from">
-        {{ message.from }}
+      <div class="message-item__sender">
+        {{ message.sender }}
       </div>
       <div class="message-item__subject">
         {{ message.subject }}
@@ -77,7 +77,7 @@
   transition: background 0s;
 }
 
-.message-item--selected .message-item__from { @apply
+.message-item--selected .message-item__sender { @apply
   text-teal-600
 }
 
@@ -101,7 +101,7 @@
   bg-teal-600
 }
 
-.message-item__from { @apply
+.message-item__sender { @apply
   font-medium
 }
 
