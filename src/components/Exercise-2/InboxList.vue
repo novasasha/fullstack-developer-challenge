@@ -10,7 +10,10 @@
       </div>
     </div>
     <p-loading-icon v-if="loading" />
-    <div v-else class="inbox-list__messages">
+    <p-message v-else-if="error" class="inbox-list__error" error>
+      {{ error }}
+    </p-message>
+    <div class="inbox-list__messages">
       <MessageItem
         v-for="message in messages"
         :key="message.id"
@@ -30,6 +33,7 @@
 
   defineProps<{
     loading: boolean,
+    error?: string | null,
     messages: Message[],
   }>()
 
@@ -97,5 +101,10 @@
 .inbox-list__title { @apply
   text-xl
   font-bold
+}
+
+.inbox-list__error { @apply
+  rounded-none
+  shadow-none
 }
 </style>

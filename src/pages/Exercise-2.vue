@@ -49,7 +49,7 @@
     <!-- Please do not modify the code between these comments! -->
 
     <!-- You may modify any code beneath this line -->
-    <InboxList :loading="store.loading" :messages="store.messages" />
+    <InboxList :loading="store.loading" :error="store.error" :messages="store.messages" />
   </p-content>
 </template>
 
