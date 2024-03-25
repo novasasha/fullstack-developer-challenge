@@ -12,8 +12,8 @@
 
     <transition name="fade" mode="out-in">
       <p-loading-icon v-if="loading" />
-      <p-message v-else-if="error" class="inbox-list__error" error>
-        {{ error }}
+      <p-message v-else-if="error" class="inbox-list__error" info>
+        <p-markdown-renderer :text="error" />
       </p-message>
       <div v-else class="inbox-list__messages">
         <MessageItem

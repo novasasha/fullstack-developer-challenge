@@ -9,6 +9,8 @@ type MessagingState = {
   messages: Message[],
 }
 
+const serverError = 'Failed to fetch messages; is the server running? Check out [README.md](https://github.com/PrefectHQ/fullstack-developer-challenge/blob/main/README.md) for help.'
+
 export const useMessagingStore = defineStore('messaging', {
   state: (): MessagingState => ({
     loading: false,
@@ -39,7 +41,7 @@ export const useMessagingStore = defineStore('messaging', {
           console.error(error)
 
           if (error.message.includes('Failed to fetch')) {
-            this.error = 'Failed to fetch messages; is the server running? Check out the Readme for help.'
+            this.error = serverError
           } else {
             this.error = error.message
           }
@@ -61,7 +63,7 @@ export const useMessagingStore = defineStore('messaging', {
           console.error(error)
 
           if (error.message.includes('Failed to fetch')) {
-            this.error = 'Failed to reset messages; is the server running?'
+            this.error = serverError
           } else {
             this.error = error.message
           }
