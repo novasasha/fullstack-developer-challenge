@@ -1,7 +1,7 @@
 import logging
 from fastapi import FastAPI
 from contextlib import asynccontextmanager
-from data.messages import init as init_messages
+from data.messages import init as init_messages, reset as reset_messages
 from fastapi.middleware.cors import CORSMiddleware
 import sqlite3
 
@@ -47,6 +47,12 @@ async def read_messages(offset: int = 0, limit: int = 10):
         "offset": offset,
         "limit": limit,
     }
+
+
+@app.post("/reset")
+async def reset():
+    reset_messages()
+    return {"status": "ok"}
 
 
 if __name__ == "__main__":
