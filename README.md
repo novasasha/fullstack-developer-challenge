@@ -67,13 +67,15 @@ Then, once you open this repository in VS Code, you should get a prompt in the b
 To start, make sure you're on the right versions of NodeJS and Python.
 
 for Node:
-```
+```sh
 nvm use
 ```
 
-for Python:
-```
-pyenv local
+for Python, a `.python-version` file is included for compatibility with `pyenv` and should get picked up automatically when running commands from within the project.
+
+```sh
+pyenv install 3.12.1
+# on cd into this directory, `python --version` should return 3.12.1
 ```
 
 Note that these assume you have Node Version Manager and Pyenv on your machine; you're free to use the environment managers of your choice, `.nvmrc` and `.python-version` files have been provided for convenience. 
@@ -82,12 +84,15 @@ Note that these assume you have Node Version Manager and Pyenv on your machine; 
 Then, install project dependencies.
 
 For Node:
-```
+```sh
 npm ci
 ```
 
 For Python:
-```
+```sh
+python -m venv venv
+source venv/bin/activate
+
 pip install -r requirements.txt
 ```
 </details>
