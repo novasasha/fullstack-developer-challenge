@@ -39,7 +39,7 @@ export const useMessagingStore = defineStore('messaging', {
           console.error(error)
 
           if (error.message.includes('Failed to fetch')) {
-            this.error = 'Failed to fetch messages; is the server running?'
+            this.error = 'Failed to fetch messages; is the server running? Check out the Readme for help.'
           } else {
             this.error = error.message
           }
