@@ -49,11 +49,25 @@ export const useMessagingStore = defineStore('messaging', {
       }
     },
     resetMessages: async function() {
-      this.loading = true
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/reset`, { method: 'POST' })
+      try {
+        this.loading = true
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/reset`, { method: 'POST' })
 
-      if (response.status === 205) {
-        await this.loadMessages()
+        if (response.status === 204) {
+          await this.loadMessages()
+        }
+      } catch (error) {
+        if (error instanceof Error) {
+          console.error(error)
+
+          if (error.message.includes('Failed to fetch')) {
+            this.error = 'Failed to reset messages; is the server running?'
+          } else {
+            this.error = error.message
+          }
+        }
+      } finally {
+        this.loading = false
       }
     },
   },

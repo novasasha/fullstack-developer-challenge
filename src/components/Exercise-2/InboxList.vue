@@ -9,19 +9,22 @@
         <p-icon icon="EllipsisVerticalIcon" size="large" />
       </div>
     </div>
-    <p-loading-icon v-if="loading" />
-    <p-message v-else-if="error" class="inbox-list__error" error>
-      {{ error }}
-    </p-message>
-    <div class="inbox-list__messages">
-      <MessageItem
-        v-for="message in messages"
-        :key="message.id"
-        :message="message"
-        :selected="selectedMessages.includes(message)"
-        @update:selected="toggleSelection(message, $event)"
-      />
-    </div>
+
+    <transition name="fade" mode="out-in">
+      <p-loading-icon v-if="loading" />
+      <p-message v-else-if="error" class="inbox-list__error" error>
+        {{ error }}
+      </p-message>
+      <div v-else class="inbox-list__messages">
+        <MessageItem
+          v-for="message in messages"
+          :key="message.id"
+          :message="message"
+          :selected="selectedMessages.includes(message)"
+          @update:selected="toggleSelection(message, $event)"
+        />
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -106,5 +109,15 @@
 .inbox-list__error { @apply
   rounded-none
   shadow-none
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.15s;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>

@@ -15,9 +15,17 @@
         the work later.
       </p>
 
+      <p>
+        To reset the db to its initial state:
+        <p-button dangerous primary small :loading="store.loading" @click="store.resetMessages()">
+          Reset messages
+        </p-button>
+      </p>
+
       <p-message info>
         There are many ways to achieve these stories. You should read through the source component to get an
         understanding of how it works.
+        <br>
       </p-message>
 
       <strong>A user can...</strong>

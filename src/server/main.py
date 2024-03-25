@@ -49,9 +49,10 @@ async def read_messages(offset: int = 0, limit: int = 10):
     }
 
 
-@app.post("/reset", status_code=205)
+@app.post("/reset", status_code=204)
 async def reset():
     reset_messages()
+    init_messages()
 
 
 if __name__ == "__main__":
