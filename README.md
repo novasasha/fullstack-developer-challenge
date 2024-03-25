@@ -55,7 +55,9 @@ To start, you'll only need the following installed on your machine:
 
 For help installing any of the above, see [here](https://code.visualstudio.com/docs/devcontainers/containers#_installation).
 
-Then, once you open this repository in VS Code, you should get a prompt in the bottom-right corner to reopen in a container - click `Yes`. Upon confirmation, your window should reopen. Note: this step may take a few minutes as it will:
+Then, once you open this repository in VS Code, you should get a prompt like "Folder contains a Dev Container configuration file. Reopen folder to develop in a container" in the bottom-right corner - click `Reopen in container`. Upon confirmation, the window should reopen. 
+
+Note that this step may take a few minutes as it will:
 1. Pull down an image and start a docker container with your local working directory mounted on at `/workspaces` and expose ports 5173 and 5174 for port forwarding so that both servers will be available from your host machine. This step will also ensure that you're using the expected python and node versions as they're pre-installed in the container.
 2. Install all python dependencies
 3. Install all node dependencies
