@@ -9,8 +9,8 @@
 
     <p-content>
       <p>
-        You're building an application that has an inbox to display email-like messages between users. Someone else on
-        your team has scaffolded the feature but you've been asked to extend the component to resolve the following user
+        You're building an application that has an inbox to display email-like messages. Someone else on
+        your team has scaffolded the feature but you've been asked to extend it to resolve the following user
         and developer stories, which are stories written from the perspective of someone on your team that might pick up
         the work later.
       </p>
