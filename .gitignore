@@ -23,3 +23,6 @@ pnpm-debug.log*
 # python files
 *.pyc
 __pycache__/
+
+# sqlite files
+*.db
