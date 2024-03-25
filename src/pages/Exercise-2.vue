@@ -52,5 +52,7 @@
   import InboxList from '@/components/Exercise-2/InboxList.vue'
   import { useMessagingStore } from '@/stores/messaging'
 
-  const { messages } = useMessagingStore()
+  const { messages, loadMessages } = useMessagingStore()
+
+  await loadMessages()
 </script>

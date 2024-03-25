@@ -2,7 +2,7 @@
   <p-layout-default id="app" class="app">
     <template #header>
       <div class="app__heading">
-        <p-icon alt="Prefect logo" class="app__heading-logo" icon="PrefectLight" />
+        <p-icon alt="Prefect logo" class="app__heading-logo" icon="Prefect" />
 
         <p-heading heading="1">
           Full-Stack Developer Challenge
@@ -23,7 +23,9 @@
     </template>
 
     <div class="app__router-view">
-      <router-view />
+      <suspense>
+        <router-view />
+      </suspense>
     </div>
   </p-layout-default>
 </template>
