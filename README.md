@@ -58,13 +58,16 @@ For help installing any of the above, see [here](https://code.visualstudio.com/d
 Then, once you open this repository in VS Code, you should get a prompt like "Folder contains a Dev Container configuration file. Reopen folder to develop in a container" in the bottom-right corner - click `Reopen in container`. Upon confirmation, the window should reopen. 
 
 Note that this step may take a few minutes as it will:
-1. Pull down an image and start a docker container with your local working directory mounted on at `/workspaces` and expose ports 5173 and 5174 for port forwarding so that both servers will be available from your host machine. This step will also ensure that you're using the expected python and node versions as they're pre-installed in the container.
+1. Pull down an image and start a docker container with your local working directory mounted on at `/workspaces` and expose ports 5173 and 5174 for port forwarding so that you can access them from your host machine. This step will also ensure that you're using the expected python and node versions as they're pre-installed in the container.
 2. Install all python dependencies
 3. Install all node dependencies
 
+Once this is done loading, you'll be dropped into VS Code connected to a running docker container on your machine.
+> **Important:** Any following shell commands should be run from a terminal within this VS Code instance so that they run within the container rather than your host machine.
+
 ### Alternate DIY setup
 <details>
-<summary>If you choose not to use the devcontainer, see here for additional instructions.</summary>
+<summary>If you choose not to use the devcontainer, see here for additional instructions. Otherwise continue on.</summary>
 
 To start, make sure you're on the right versions of NodeJS and Python.
 
@@ -99,17 +102,17 @@ pip install -r requirements.txt
 ```
 </details>
 
-### Transpiles and hot-reloads for development
+### Running the app
 
 Then, start your development server.
 
 In one terminal, start your Fast API webserver with the following (from the root directory):
-```
+```sh
 python server.py
 ```
 
 And in another, start your Vue application with the following:
-```
+```sh
 npm run dev
 ```
 
