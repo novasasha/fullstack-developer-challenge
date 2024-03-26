@@ -45,17 +45,42 @@ This project should be submitted by adding [@znicholasbrown](https://github.com/
 - [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python) Python language support with IntelliSense (Pylance), Debugging (Python Debugger), linting, formatting, and unit tests.
 
 ## Local Development
+### Recommended setup
+For your convenience, this project is configured with a [devcontainer](https://code.visualstudio.com/docs/devcontainers/containers) configuration file. 
+
+To start, you'll only need the following installed on your machine:
+1. Docker
+2. VS Code
+3. The [VS Code devcontainers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+
+For help installing any of the above, see [here](https://code.visualstudio.com/docs/devcontainers/containers#_installation).
+
+Then, once you open this repository in VS Code, you should get a prompt like "Folder contains a Dev Container configuration file. Reopen folder to develop in a container" in the bottom-right corner - click `Reopen in container`. Upon confirmation, the window should reopen. 
+
+Note that this step may take a few minutes as it will:
+1. Pull down an image and start a docker container with your local working directory mounted on at `/workspaces` and expose ports 5173 and 5174 for port forwarding so that you can access them from your host machine. This step will also ensure that you're using the expected python and node versions as they're pre-installed in the container.
+2. Install all python dependencies
+3. Install all node dependencies
+
+Once this is done loading, you'll be dropped into VS Code connected to a running docker container on your machine.
+> **Important:** Any following shell commands should be run from a terminal within this VS Code instance so that they run within the container rather than your host machine.
+
+### Alternate DIY setup
+<details>
+<summary>If you choose not to use the devcontainer, see here for additional instructions. Otherwise continue on.</summary>
 
 To start, make sure you're on the right versions of NodeJS and Python.
 
 for Node:
-```
+```sh
 nvm use
 ```
 
-for Python:
-```
-pyenv local
+for Python, a `.python-version` file is included for compatibility with `pyenv` and should get picked up automatically when running commands from within the project.
+
+```sh
+pyenv install 3.12.1
+# on cd into this directory, `python --version` should return 3.12.1
 ```
 
 Note that these assume you have Node Version Manager and Pyenv on your machine; you're free to use the environment managers of your choice, `.nvmrc` and `.python-version` files have been provided for convenience. 
@@ -64,26 +89,30 @@ Note that these assume you have Node Version Manager and Pyenv on your machine; 
 Then, install project dependencies.
 
 For Node:
-```
+```sh
 npm ci
 ```
 
 For Python:
-```
+```sh
+python -m venv venv
+source venv/bin/activate
+
 pip install -r requirements.txt
 ```
+</details>
 
-### Transpiles and hot-reloads for development
+### Running the app
 
 Then, start your development server.
 
 In one terminal, start your Fast API webserver with the following (from the root directory):
-```
+```sh
 python server.py
 ```
 
 And in another, start your Vue application with the following:
-```
+```sh
 npm run dev
 ```
 

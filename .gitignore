@@ -23,6 +23,7 @@ pnpm-debug.log*
 # python files
 *.pyc
 __pycache__/
+venv/
 
 # sqlite files
 *.db
