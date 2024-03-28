@@ -116,7 +116,7 @@ And in another, start your Vue application with the following:
 npm run dev
 ```
 
-You should now be able to navigate to [localhost:5173](http://localhost:5173)! (Note: you may need to modify the `PORT` variable in `.env` if you've another process running on :5174)
+You should now be able to navigate to [localhost:5173](http://localhost:5173)!
 
 
 ### Lints and fixes files
