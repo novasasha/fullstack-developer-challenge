@@ -3,9 +3,11 @@ from fastapi import FastAPI
 from contextlib import asynccontextmanager
 from .data.messages import init as init_messages, reset as reset_messages
 from fastapi.middleware.cors import CORSMiddleware
+
+logging.basicConfig(level=logging.INFO)
 import sqlite3
 
-logger = logging.getLogger("challenge-server")
+logger = logging.getLogger(__name__)
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
